@@ -1,0 +1,22 @@
+//-extends layout
+//-
+//-block content
+//-  h1= title
+//-  p Welcome to #{title}
+//-
+
+doctype html 
+html
+  head 
+    title Login Page
+  body 
+    h1 login Here
+
+  form(role='form' action='www.google.com', method='GET')
+    div.form-group
+      label(for='username') Username:
+      input#username.form-control(type='text', placeholder='username' name='Username')
+    div.form-group
+      label(for='password') Password: 
+      input#email.form-control(type='text', placeholder='password' name='password')
+    button.btn.btn-primary(type='submit', name="submit-login") Login

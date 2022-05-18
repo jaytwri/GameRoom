@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+   
+<head>
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+   
+    <!-- CSS file Included -->
+    <link rel="stylesheet"
+        type="text/css" href="tic.css">
+   
+    <!-- JavaScript file included -->
+    <script src="tictactoe.js"></script>
+	
+	<style>
+	body 
+	{
+		background-image: url('Background1.png');
+	}
+	</style>
+</head>
+   
+<body>
+    <div id="main">
+        <h1><font face="Trebuchet MS" style="font-size: 64px" color="#FFFFFF">TIC TAC TOE GAME</font></h1>
+   
+		<center>
+
+         <!-- Space to show player turn -->
+        <font face="Trebuchet MS" style="font-size: 32px" color="#FFFFFF" id="print"></font>
+  
+		
+   
+        <br><br>
+		
+		
+		
+        <!-- 3*3 grid of Boxes -->
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b1" onclick=
+            "myfunc_3(); myfunc();" readonly>
+   
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b2" onclick=
+            "myfunc_4(); myfunc();" readonly>
+   
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b3" onclick=
+            "myfunc_5(); myfunc();" readonly>
+        <br><br>
+   
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b4" onclick=
+            "myfunc_6(); myfunc();" readonly>
+               
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b5" onclick=
+            "myfunc_7(); myfunc();" readonly>
+   
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b6" onclick=
+            "myfunc_8(); myfunc();" readonly>
+        <br><br>
+   
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b7" onclick=
+            "myfunc_9(); myfunc();" readonly>
+   
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b8" onclick=
+            "myfunc_10();myfunc();" readonly>
+   
+        <input type="text" style="height:150px; width:150px; font-size: 64px; text-align:center;" id="b9" onclick=
+            "myfunc_11();myfunc();" readonly>
+			
+		
+   
+        <!-- Grid end here  -->
+        <br><br><br>
+		
+		<a style="font-size: 32px; color: white; font-family: Trebuchet MS" id="but" onclick="myfunc_2()">RESET</a>
+		<font face="Trebuchet MS" style="font-size: 32px" color="#000000">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font>
+		<a style="font-size: 32px; color:white; font-family: Trebuchet MS" href="game_select.html">BACK TO GAME SELECTION</a>
+
+        <!-- <br><br> -->
+		
+		</center>
+
+ 
+  
+   
+   
+    </div>
+</body>
+   
+</html>

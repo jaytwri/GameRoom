@@ -1,0 +1,151 @@
+body {
+  font-family: Calibri;
+  transition: 0.2s ease;
+  text-align: center;
+  background-image: url('Background1.png');
+}
+body.success  {
+  background-color: #b7f0b7;
+  transition: 0.2s ease;
+}
+.game-container {
+  margin: 0px auto;
+}
+
+p {
+  margin: 10px 0px;
+  padding: 0px;
+  text-align: center;
+}
+.game-map {
+  position: relative;
+}
+div.layer, 
+div.layer div {
+  position: absolute;
+}
+#tiles div {
+  border: 1px solid grey;
+}
+.default .floor {
+  background-color: lightgrey;
+}
+.default .wall {
+  background-color: skyblue;
+}
+.player {
+  background-color: #90ee90;
+  border: 1px solid green;
+}
+.goal {
+  background-color: #FFD700;
+  border: 1px solid #98720b;
+}
+.player {
+  background-color: #90ee90;
+  border: 1px solid green;
+  transition: left 0.2s linear, top 0.2s linear;
+}
+#success-msg {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  position: absolute;
+  padding: 5px 5px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  width: calc(100% - 8px);
+}
+ body.success #success-msg {
+  opacity: 1;
+  transition: opacity 0.2 ease;
+}
+#map-and-controls {
+  display: flex;
+  justify-content: center;
+}
+#controls button {
+  padding: 10px 10px;
+  width: 38px;
+  height: 38px;
+  margin-top: 10px;
+  background-color: #DDD;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+button#right {
+  margin-left: 5px;
+}
+button#left {
+  margin-right: 5px;
+}
+#controls {
+  margin-left: 10px;
+  text-align: center;
+}
+#controls #horiz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#controls button::before {
+  content:'';
+  width: 0px;
+  position: absolute;
+}
+
+.player, 
+.goal {
+  transform-origin: center;
+  transform:scale(0.85);
+}
+
+button#left::before {
+  border-top: 10px solid transparent;
+  border-right: 15px solid #000;
+  border-bottom: 10px solid transparent;
+  left: 10px;
+  top: 9px;
+}
+button#right::before {
+  border-top: 10px solid transparent;
+  border-left: 15px solid #000;
+  border-bottom: 10px solid transparent;
+  left: 12px;
+  top: 9px;
+}
+button#up::before {
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 15px solid #000;
+  left: 9px;
+  top: 9px;
+}
+button#down::before {
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 15px solid #000;
+  left: 9px;
+  top: 12px;
+}
+
+.grassland .floor {
+  background-color: #7bb76d;
+}
+.grassland .wall {
+  background-color: #806d51;
+}
+.grassland #player {
+ background-color: #90b9ee
+}
+
+.dungeon .floor {
+  background-color: darkgrey;
+}
+.dungeon .wall {
+  background-color: #9c649c;
+}
+.dungeon #player {
+ background-color: #ab1431;
+}
